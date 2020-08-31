@@ -1,0 +1,28 @@
+body{
+    background-image: url(download.png)
+}
+#form{
+    width: fit-content;
+    text-align: center;
+    border:2px solid black;
+}
+.chat{
+    
+}
+.phone{
+    border-radius:15px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 25px;
+}
+#message{
+    width: 86%;
+    border-radius: 3px;
+}
+
+#message- {
+    border: 2px solid black;
+
+}

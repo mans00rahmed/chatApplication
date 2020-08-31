@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App📲</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDPXjRwVm7zsiHQr8v-2GE498xa8DfGcCw",
+            authDomain: "chatapp-lication.firebaseapp.com",
+            databaseURL: "https://chatapp-lication.firebaseio.com",
+            projectId: "chatapp-lication",
+            storageBucket: "chatapp-lication.appspot.com",
+            messagingSenderId: "821170937668",
+            appId: "1:821170937668:web:4b3939b8c992cc8b3a0111",
+            measurementId: "G-0GFFH14J56"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</head>
+
+<body>
+    <div class="phone">
+        <h1 class="display-1">Chat Application.</h1>
+        <hr>
+        <div class="chat">
+            <ul id="messages"></ul>
+        </div>
+
+
+
+        <!-- create a form to send message -->
+        <form class="form" onsubmit="return sendMessage();">
+            <input id="message" placeholder="Type Message" autocomplete="off">
+
+            <input type="submit">
+        </form>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
